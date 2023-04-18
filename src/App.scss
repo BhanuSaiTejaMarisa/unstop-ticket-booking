@@ -1,5 +1,35 @@
 .App {
   text-align: center;
+  margin: 1rem;
+
+  .block {
+    display: flex;
+    gap: 1rem;
+    margin: 10rem auto;
+    width: fit-content;
+    align-items: start;
+
+    .row {
+      display: grid;
+      gap: 1rem;
+      width: fit-content;
+      box-shadow: 1px 2px 3px rgb(0, 0, 0, 0.4);
+      padding: 0.5rem;
+
+
+      .seat {
+        border: 1px solid grey;
+        width: 20px;
+
+        background-color: lightgreen;
+
+        &.unavailable {
+          background-color: salmon;
+
+        }
+      }
+    }
+  }
 }
 
 .App-logo {
@@ -32,6 +62,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
